@@ -1,0 +1,61 @@
+.banner {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  margin-top: 87px;
+  margin-bottom: 190px;
+
+  @media (max-width: $small-devices) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  @media (max-width: $medium-devices) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__text {
+    max-width: 446px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+
+    @media (max-width: $small-devices) {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $medium-devices) {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+  }
+
+  &__paragraph {
+    font-weight: lighter;
+    font-size: 21px;
+    color: $grey;
+  }
+
+  &__button {
+    @include button($accent, $white);
+  }
+
+  &__image {
+    max-width: 693px;
+
+    @media (max-width: $medium-devices)  {
+        margin: 0 auto;
+        width: 100%;
+      }
+  }
+}
